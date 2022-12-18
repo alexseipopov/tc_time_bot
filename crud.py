@@ -110,7 +110,7 @@ def execute_write(cmd: str):
         host="localhost",
         user=DB_USER,
         password=DB_PASSWORD,
-        database="s21_peer"
+        database="tc_time_work"
     ) as connection:
         with connection.cursor() as cursor:
             cursor.execute(cmd)
@@ -124,7 +124,7 @@ def execute_read(cmd: str, is_many: bool = False):
         host="localhost",
         user=DB_USER,
         password=DB_PASSWORD,
-        database="s21_peer"
+        database="tc_time_work"
     ) as connection:
         with connection.cursor() as cursor:
             cursor.execute(cmd)
